@@ -4,7 +4,8 @@
   "description": "None yet",
   "main": "app.js",
   "scripts": {
-    "start": "open http://localhost:8080/ && nodemon app.js"
+    "start": "open http://localhost:8080/ && ./bin/www",
+    "test": "mocha test.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,9 @@
     "nodemon": "^1.11.0",
     "redis": "^2.7.1",
     "serve-static": "^1.12.3"
+  },
+  "devDependencies": {
+    "mocha": "^3.4.2",
+    "supertest": "^3.0.0"
   }
 }

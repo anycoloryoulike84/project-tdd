@@ -1,11 +1,12 @@
-
-
-
 #!/usr/bin/env node
 
 var app = require('./../app');
-app.listen(8080);
 
+
+var port = process.env.PORT || 8080;
+app.listen(port, function() {
+  console.log('Listening on Port: ' + port + "\nbin/www test file running");
+});
 
 
 
