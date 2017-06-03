@@ -2,9 +2,9 @@
   "name": "project-tdd",
   "version": "1.0.0",
   "description": "None yet",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "open http://localhost:8080/ && nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/anycoloryoulike84/project-tdd/issues"
   },
-  "homepage": "https://github.com/anycoloryoulike84/project-tdd#readme"
+  "homepage": "https://github.com/anycoloryoulike84/project-tdd#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "nodemon": "^1.11.0",
+    "serve-static": "^1.12.3"
+  }
 }
