@@ -1,0 +1,19 @@
+{
+  "name": "project-tdd",
+  "version": "1.0.0",
+  "description": "None yet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anycoloryoulike84/project-tdd.git"
+  },
+  "author": "Greg Griffin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anycoloryoulike84/project-tdd/issues"
+  },
+  "homepage": "https://github.com/anycoloryoulike84/project-tdd#readme"
+}
