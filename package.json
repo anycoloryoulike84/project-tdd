@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "NODE_ENV=test mocha test.js",
-    "start": "./bin/www"
+    "start": "node bin/www"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
   },
   "devDependencies": {
     "mocha": "^3.4.2",
+    "module-js": "^5.15.0",
     "supertest": "^3.0.0"
   }
 }
