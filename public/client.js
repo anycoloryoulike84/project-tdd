@@ -1,10 +1,13 @@
+
+
+
+
 $(function(){
 
   $.get('/cities', appendToList);
 
   $('form').on('submit', function(event) {
     event.preventDefault();
-
     var form = $(this);
     var cityData = form.serialize();
 
@@ -27,7 +30,7 @@ $(function(){
     var content, city;
     for(var i in cities){
       city = cities[i];
-      content = '<a href="/cities/'+city+'">'+city+'</a>'+
+      content = '<a href="/cities/'+city+'">'+city+'</a>'+ // + // example on how to serve static images
         ' <a href="#" data-city="'+city+'">'+
         '<img src="del.png" width="20px"></a>';
       list.push($('<li>', { html: content }));
@@ -53,5 +56,4 @@ $(function(){
   });
 
 });
-
 

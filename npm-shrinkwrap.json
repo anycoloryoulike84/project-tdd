@@ -1995,6 +1995,11 @@
       "resolved": "https://registry.npmjs.org/isobject/-/isobject-2.1.0.tgz",
       "integrity": "sha1-8GVWEJaj8dou9GJy+BXIQNh+DIk="
     },
+    "jquery": {
+      "version": "3.2.1",
+      "resolved": "https://registry.npmjs.org/jquery/-/jquery-3.2.1.tgz",
+      "integrity": "sha1-XE2d5lKvbNCncBVKYxu6ErAVx4c="
+    },
     "js-tokens": {
       "version": "3.0.1",
       "resolved": "https://registry.npmjs.org/js-tokens/-/js-tokens-3.0.1.tgz",
