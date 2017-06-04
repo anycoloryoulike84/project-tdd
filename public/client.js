@@ -27,7 +27,7 @@ $(function(){
     var content, city;
     for(var i in cities){
       city = cities[i];
-      content = '<a href="/cities/'+city+'">'+city+'</a>'+ // + // example on how to serve static images
+      content = '<a href="/cities/'+city+'">'+city+'</a>'+
         ' <a href="#" data-city="'+city+'">'+
         '<img src="del.png" width="20px"></a>';
       list.push($('<li>', { html: content }));
@@ -53,3 +53,5 @@ $(function(){
   });
 
 });
+
+
