@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/anycoloryoulike84/project-tdd#readme",
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "express": "^4.15.3",
     "nodemon": "^1.11.0",
     "redis": "^2.7.1",
