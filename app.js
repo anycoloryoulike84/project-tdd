@@ -2,21 +2,13 @@ var express = require("express");
 var app = express();
 var path = require('path');
 var public = __dirname + "/public/";
-
+var cities = require('./routes/cities');
 
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 
-// viewed at http://localhost:8080
-app.get('/', function(req, res) {
-    res.sendFile(path.join(public + "index.html"));
-});
+app.use(express.static(__dirname + '/public'));
 
-app.get('/cities', function(req, res) {
-	var cities = ["city","ewewe","weds"]
-	res.json(cities);
-});
 
-app.use('/', express.static(public));
+app.use('/cities', cities);
 
 module.exports = app;
-// app.listen(8080)
