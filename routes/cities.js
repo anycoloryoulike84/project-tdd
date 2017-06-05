@@ -16,7 +16,6 @@ if (process.env.REDISTOGO_URL) {
   client.select((process.env.NODE_ENV || 'development').length);
 }
 // End Redis Connection
-
 var router = express.Router();
 
 router.route('/')
