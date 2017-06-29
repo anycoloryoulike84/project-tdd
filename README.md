@@ -1,11 +1,9 @@
 
-**NOTE: Code For a simple Test-Driven-Development Express App**
-
-# Node-Express
+**Code For a simple Test-Driven-Development Express App/Node-Express**
 
 [ DEMO HERE ](https://poetry-the-app.herokuapp.com/)
 
-A simple node/express server.
+A simple node/express server with UI for users to submit and read poems.
 
 ## Installation
 
