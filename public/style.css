@@ -2,19 +2,25 @@
 
 /* Base */
 
-html {
+body {
   background: #f9b8b4; /* Old browsers */
-  background: url('2.jpeg') repeat-x center top, linear-gradient(to bottom, #f9b8b4 0%, #ebe8ba 100%) no-repeat center; /* W3C */
+  background: linear-gradient(to bottom, #f9b8b4 0%, #ebe8ba 100%) no-repeat center; /* W3C */
   min-height: 100%;
 }
+
+.jumbotron {
+  color: red;
+  background: url('9.jpg') repeat-x left bottom;
+  width: 100%;
+}
+
 
 body {
   color: #ded;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
   margin: 0 auto;
-  padding-top: 80px;
-  width: 600px;
+  width: 90%;
 }
 
 /* Headings */
@@ -22,6 +28,15 @@ body {
 h1 {
   color: white;
   margin-bottom: 20px;
+  text-align: center
+}
+
+h1 + h2, h2 + h3 {
+  text-align: center;
+}
+
+h2,h3,h4 {
+  color: #e1e1e1
 }
 
 /* Lists */
@@ -58,6 +73,14 @@ form, .city-list {
   padding: 20px;
 }
 
+@media only screen and (min-width: 40.063em) {
+        form,
+        body > ul {
+          max-width: 50%;
+          margin: 1% auto;
+        }
+  }
+
 /* Form */
 
 legend {
@@ -77,10 +100,12 @@ input {
   padding: 10px;
   width: 100%;
 }
+
 input:focus {
   box-shadow: 0 0 4px rgba(249, 184, 180, 0.85);
   outline: none;
 }
+
 input[type="submit"] {
   background: #d19b99;
   border: 0;
@@ -109,10 +134,86 @@ input[type="submit"] {
 
 .city-list li::after {
   clear: both;
-  content: '';
+  content: ' ';
   display: table;
 }
 .city-list li a:last-child {
   float: left;
   padding-right: 10px;
 }
+
+
+
+
+
+/** {
+
+font-family: 'Abril Fatface', cursive;
+font-family: 'Antic Didone', serif;
+font-family: 'GFS Didot', serif;
+}
+*/
+h1, button {
+  font-family: 'Abril Fatface' !important;
+  font-size: 4em;
+  text-shadow: 1px 1px 3px black;
+  
+}
+.submitbutton:hover {
+  opacity: .9;
+  cursor: pointer;
+}
+
+h2, li, p, button, a {
+  font-family: 'Antic Didone', serif !important;
+}
+
+*, body, h3, h4, h5 {
+  font-family: 'Antic Didone', serif !important;
+}
+
+
+
+@media only screen and (min-width: 40.063em) {
+      .col > img {
+        height: 350px;
+        width: auto;
+        overflow: hidden;
+        border-radius: 50%
+      }
+}
+.row.m-y-4 {
+  margin-top: 10%;
+  margin-bottom: 7%
+}
+
+
+
+#footer {
+  margin-top: 10%;
+  width:100%;
+}
+#footer ul  {
+   padding: 5% 1% 
+}
+
+
+h3 {
+    text-align: center;
+    color: #222;
+    font-family: 'Antic Didone', serif !important;
+    width: 40%;
+    margin: 1% auto;
+    line-height: 1.6em;
+  }
+
+h3::first-letter {
+  font-weight: bold;
+  color: #955;
+
+}
+
+
+
+
+
