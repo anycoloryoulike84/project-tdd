@@ -1,3 +1,4 @@
+
 module.exports = function (request, response, next) {
   var startTime = +new Date();
   var stream = process.stdout;

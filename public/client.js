@@ -34,11 +34,12 @@ $(function(){
       city = cities[i];
       content = '<a href="/cities/'+city+'">'+city+'</a>'+ // + // example on how to serve static images
         ' <a href="#" data-city="'+city+'">'+
-        '<img src="del.png" width="20px"></a>';
+        '<img src="del.png" width="25px"></a><h3>';
       list.push($('<li>', { html: content }));
     }
 
-    $('.city-list').append(list)
+    $('.city-list').append(list);
+    $("#submitform").reset();
   }
 
 

@@ -2,34 +2,113 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>BEER THE APP!</title>
-  <link rel="stylesheet" href="style.css"/>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="jquery.js"></script>
+  <title>Poem The App</title>
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Antic+Didone|GFS+Didot" rel="stylesheet">
+
+
+  
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<script src="jquery.js"></script>
+<link rel="stylesheet" href="style.css">
 
 </head>
+
+
 <body>
 
-  <h1>Beer The App!</h1>
-  <h3>Discover all beers on tap in Berkeley Now <em><br>beta version</em></h3>
 
+
+<div>
+
+<div class="jumbotron bg-info">
+<div class="container">
+  <h1>Poem The App</h1>
+  <h2>Write a poem on the go</h2>
+
+</div>
+
+</div>
+
+  <br>
+
+
+
+</div>
   <div class="alert">
-    Invalid Beer
+    Invalid Poem
   </div>
-
-  <form>
-    <legend><em><strong style="color:#323">ENTER NEW BEER ON TAP:</strong></em></legend>
-    <input name="name" placeholder="Name Of Beer"><br/>
-    <input name="brewery" placeholder="Brewery"><br/>
-    <input name="description" placeholder="Description">
-    <input name="alcoholContent" placeholder="Alcohol %">
-    <input name="bar" placeholder="What bar is this beer located?">
-    <input type="Submit">
-  </form>
+<div>
+  <form id="submitform">
+    <legend><em><strong style="color:#323">Enter a New Poem:</strong></em></legend>
+    <input name="name" id="poemname" placeholder="Name Of Poem, Author"><br/>
+    <input name="description" placeholder="Poem Content Here">
+    <input type="Submit" class="submitbutton">
+  </form></div>
 
   <ul class='city-list'></ul>
 
+  <div class="container">
+  <div class="row m-y-4">
+    <div class="col text-info col-md-4 col-sm-12 col-xs-12 hidden-sx-down">
+        <img src="5.jpeg" class="img-fluid">
+
+
+    </div>
+    <div class="col text-info text-center col-md-4 col-sm-12 col-xs-12 ">
+      <h4 class="text-info pt-4 display-4"> All the Poems</h4>
+      <p>Check it out!</p>
+        <img src="6.jpeg" class="img-fluid">
+        
+
+    </div>
+    <div class="col text-info col-md-4 col-sm-12 col-xs-12hidden-sx-down">
+        <img src="8.jpg" class="img-fluid">
+
+
+
+
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container" id="footer">
+    <div class="row bg-info">
+      <div class="col-md-3 text-center">
+        <ul><li>&#169;All Rights Reserved 2017</li></ul>
+      </div>
+      <div class="col-md-3 text-center  offset-md-6">
+        <ul>
+          <li>Poem The App <sup>beta</sup>  </li>
+          <li>2338 Telegraph Ave</li>
+          <li>Berkeley, CA</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
   
   <script src="client.js"></script>
+
+<script type="text/javascript">
+
+  $('form').on('submit', function(){
+
+  var bla = $("#poemname").val();
+  var blaname = '<a href="/cities/'+bla+'">'+bla+'</a>'+ // + // example on how to serve static images
+        ' <a href="#" data-city="'+bla+'">'+
+        '<img src="del.png" width="25px"></a><h3>';
+
+  $('.city-list').append(blaname);
+
+  });
+
+</script>
+
 </body>
 </html>

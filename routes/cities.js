@@ -53,9 +53,11 @@ router.route('/:name')
     client.hget('cities', request.params.name, function(error, description) {
       response.render('show.ejs',
                       { city:
-                        { name: request.params.name, description: description }
+                        { name: request.params.name, description: description },
+                        
                       });
     });
   });
 
 module.exports = router;
+

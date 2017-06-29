@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
 var loadingTime = require("./loading_time");
+var bodyParser = require("body-parser");
 
 app.use(loadingTime);
 app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist/'));
