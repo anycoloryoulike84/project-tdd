@@ -4,11 +4,8 @@
 
 body {
   background: #f9b8b4; /* Old browsers */
-<<<<<<< HEAD
   background: url('3.jpeg') repeat-x center top, linear-gradient(to bottom, #f9b8b4 0%, #ebe8ba 100%) no-repeat center; /* W3C */
-=======
   background: linear-gradient(to bottom, #f9b8b4 0%, #ebe8ba 100%) no-repeat center; /* W3C */
->>>>>>> poetry_branch
   min-height: 100%;
 }
 
@@ -221,6 +218,3 @@ h3::first-letter {
 
 
 
-
-
->>>>>>> poetry_branch
