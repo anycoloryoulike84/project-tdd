@@ -39,7 +39,6 @@ $(function(){
     }
 
     $('.city-list').append(list);
-    $("#submitform").reset();
   }
 
 
